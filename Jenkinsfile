@@ -20,7 +20,7 @@ pipeline {
         }
         stage('SonarQube Analysis') {
             steps {
-                withSonarQubeEnv('SonarQube') { // Match the SonarQube server name configured in Jenkins
+                withSonarQubeEnv('sonarqube-server') { // Match the SonarQube server name configured in Jenkins
                     bat '''
                     sonar-scanner ^
                         -Dsonar.projectKey=RegisterFrontend ^
