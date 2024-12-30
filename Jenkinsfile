@@ -23,7 +23,7 @@ pipeline {
                     bat '''
                     sonar-scanner \
                         -Dsonar.projectKey=RegisterFrontend \
-                        -Dsonar.sources=. \
+                        -Dsonar.sources=src \
                         -Dsonar.exclusions=**/node_modules/**,**/build/** \
                         -Dsonar.host.url=http://localhost:9000 \
                         -Dsonar.token=%SONARQUBE_TOKEN%
