@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools {
         nodejs 'NodeJS' // Correct NodeJS installation name
-        sonar 'Sonarscanner' // Correct tool type for SonarQube
+        // sonar 'Sonarscanner' // Correct tool type for SonarQube
     }
     environment {
         SONARQUBE_TOKEN = credentials('sonarqube-token') // SonarQube token stored in Jenkins credentials
