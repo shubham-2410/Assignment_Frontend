@@ -36,7 +36,7 @@ function Signup() {
                         fullWidth
                         sx={{ mb: 2 }}
                     />
-                    <TextField onChange={(e)=>{setPassword(e.target.value)}}
+                    <TextField onChange={(e)=>{setEmail(e.target.value)}}
                         name="email" required
                         label="Enter Email"
                         variant="filled"
