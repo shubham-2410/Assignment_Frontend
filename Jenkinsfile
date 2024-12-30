@@ -18,6 +18,11 @@ pipeline {
                 bat 'npm install' // For Windows, replace with 'sh' for Unix-based systems
             }
         }
+        stage('Building') {
+            steps {
+                bat 'npm run build' // For Windows, replace with 'sh' for Unix-based systems
+            }
+        }
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv('sonarqube-server') { // Match the SonarQube server name configured in Jenkins
